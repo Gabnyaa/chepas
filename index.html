@@ -3,91 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech Solutions - Services Informatiques Professionnels</title>
+    <title>Le Mauvais Coin - Annonces pas fiables</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Tech Solutions</h1>
-            <nav>
-                <ul>
-                    <li><a href="#accueil">Accueil</a></li>
-                    <li><a href="#about">À propos</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+            <h1>Le Mauvais Coin</h1>
+            <p>⚠️ Attention : Ce n'est PAS Le Bon Coin !</p>
+            <form id="search-form">
+                <input type="text" id="search" placeholder="Rechercher des annonces...">
+                <button type="submit">Rechercher</button>
+            </form>
         </div>
     </header>
 
-    <main>
-        <section id="accueil" class="hero">
-            <div class="container">
-                <h2>Bienvenue chez Tech Solutions</h2>
-                <p>Votre partenaire de confiance pour des solutions informatiques innovantes et fiables.</p>
-                <a href="#" onclick="showModal()" class="btn">Contactez-nous</a>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#" onclick="alert('Vous n\'êtes pas sur Le Bon Coin !')">Véhicules</a></li>
+                <li><a href="#" onclick="alert('Vous n\'êtes pas sur Le Bon Coin !')">Immobilier</a></li>
+                <li><a href="#" onclick="alert('Vous n\'êtes pas sur Le Bon Coin !')">Emploi</a></li>
+                <li><a href="#" onclick="alert('Vous n\'êtes pas sur Le Bon Coin !')">Multimédia</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="ads">
+            <h2>Annonces récentes</h2>
+            <div class="ad" onclick="alert('Cette annonce n\'existe pas sur Le Bon Coin !')">
+                <h3>Voiture d'occasion - Peugeot 206</h3>
+                <p>Prix : 500€ - ⚠️ Pas fiable !</p>
+            </div>
+            <div class="ad" onclick="alert('Vous n\'êtes pas au bon endroit !')">
+                <h3>Appartement 2 pièces</h3>
+                <p>Loyer : 800€ - ⚠️ Mauvaise idée !</p>
+            </div>
+            <div class="ad" onclick="alert('Le Mauvais Coin : Rien de bon ici !')">
+                <h3>iPhone 12</h3>
+                <p>Prix : 300€ - ⚠️ Probablement volé !</p>
             </div>
         </section>
 
-        <section id="about" class="about">
-            <div class="container">
-                <h2>À propos de nous</h2>
-                <p>Tech Solutions est une entreprise spécialisée dans les services informatiques, offrant des solutions sur mesure pour les entreprises de toutes tailles. Notre équipe d'experts passionnés s'engage à fournir des services de qualité supérieure.</p>
-            </div>
-        </section>
-
-        <section id="services" class="services">
-            <div class="container">
-                <h2>Nos Services</h2>
-                <div class="service-list">
-                    <div class="service">
-                        <h3>Développement Web</h3>
-                        <p>Création de sites web modernes et responsives adaptés à vos besoins.</p>
-                    </div>
-                    <div class="service">
-                        <h3>Maintenance Informatique</h3>
-                        <p>Support technique et maintenance pour assurer la continuité de vos opérations.</p>
-                    </div>
-                    <div class="service">
-                        <h3>Conseil en Technologie</h3>
-                        <p>Accompagnement stratégique pour optimiser vos processus informatiques.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="contact">
-            <div class="container">
-                <h2>Contactez-nous</h2>
-                <form action="thankyou.html">
-                    <label for="name">Nom :</label>
-                    <input type="text" id="name" name="name" required>
-
-                    <label for="email">Email :</label>
-                    <input type="email" id="email" name="email" required>
-
-                    <label for="message">Message :</label>
-                    <textarea id="message" name="message" required></textarea>
-
-                    <button type="submit" class="btn">Envoyer</button>
-                </form>
-            </div>
+        <section class="reminder">
+            <p>🔴 RAPPEL : Vous êtes sur LE MAUVAIS COIN, pas Le Bon Coin ! Toutes les annonces sont fictives et inutiles.</p>
         </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2026 Tech Solutions. Tous droits réservés.</p>
+            <p>&copy; 2026 Le Mauvais Coin. Rien de bon ici.</p>
         </div>
     </footer>
-
-    <div id="modal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h1>NON!!</h1>
-        </div>
-    </div>
 
     <script src="script.js"></script>
 </body>
